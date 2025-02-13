@@ -123,6 +123,7 @@ config_from_env("SPIFFWORKFLOW_BACKEND_OPEN_ID_VERIFY_NBF", default=True)
 config_from_env("SPIFFWORKFLOW_BACKEND_OPEN_ID_VERIFY_AZP", default=True)
 config_from_env("SPIFFWORKFLOW_BACKEND_OPEN_ID_LEEWAY", default=5)
 config_from_env("SPIFFWORKFLOW_BACKEND_OPEN_ID_INTERNAL_URL_IS_VALID_ISSUER", default=False)
+config_from_env("SPIFFWORKFLOW_BACKEND_OPEN_ID_SCOPES", default="openid,profile,email")
 
 # Open ID server
 # use "http://localhost:7000/openid" for running with simple openid
@@ -167,6 +168,7 @@ config_from_env("SPIFFWORKFLOW_BACKEND_LOG_LEVEL", default="info")
 config_from_env("SPIFFWORKFLOW_BACKEND_LOG_TO_FILE", default=False)
 config_from_env("SPIFFWORKFLOW_BACKEND_EVENT_STREAM_HOST", default=None)
 config_from_env("SPIFFWORKFLOW_BACKEND_EVENT_STREAM_PORT", default=None)
+config_from_env("SPIFFWORKFLOW_BACKEND_EVENT_STREAM_SOURCE", default="spiffworkflow.org")
 
 ### permissions
 config_from_env("SPIFFWORKFLOW_BACKEND_PERMISSIONS_FILE_ABSOLUTE_PATH")
