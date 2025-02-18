@@ -15,7 +15,7 @@ class ServiceAccountService:
         username = ServiceAccountModel.generate_username_for_related_user(name, service_account_creator.id)
         service_account_user = UserModel(
             username=username,
-            email=f"{username}@spiff.service.account.example.com",
+            email=f"{username}@agrocrestani.com.br",
             service=SPIFF_SERVICE_ACCOUNT_AUTH_SERVICE,
             service_id=f"{SPIFF_SERVICE_ACCOUNT_AUTH_SERVICE_ID_PREFIX}_{username}",
         )
